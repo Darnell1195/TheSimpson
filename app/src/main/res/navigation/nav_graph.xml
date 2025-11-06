@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/simpsonListFragment">
+
+    <fragment
+        android:id="@+id/simpsonListFragment"
+        android:name="com.aplicacion.thesimpson.feature.presentation.SimpsonListFragment"
+        android:label="fragment_list_simpson"
+        tools:layout="@layout/fragment_list_simpson">
+
+        <action
+            android:id="@+id/action_simpsonListFragment_to_simpsonDetailFragment"
+            app:destination="@id/simpsonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/simpsonDetailFragment"
+        android:name="com.aplicacion.thesimpson.feature.presentation.SimpsonDetailFragment"
+        android:label="fragment_simpson_detail"
+        tools:layout="@layout/fragment_simpson_detail" />
+
+</navigation>
